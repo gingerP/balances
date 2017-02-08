@@ -1,0 +1,19 @@
+<div class="day-view">
+    <div class="day-view-title">
+        <span ng-bind="::$ctrl.day.name"></span>
+        <span ng-bind="::$ctrl.formattedDate" class="day-view-date"></span>
+    </div>
+    <div class="balances">
+        <div class="balance-item" ng-repeat="balance in $ctrl.balances track by balance.id">
+            <input
+                    ng-model="balance.value"
+                    class="underline"
+                    type="text"
+                    placeholder="{{::$ctrl.placeholder}}"
+                    ng-blur="$ctrl.focusOut(balance)"
+                    ng-focus="$ctrl.focusIn(balance)"
+            >
+            <span class="underline-bar"></span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<side-bar></side-bar>
+<div>
+    <div>
+        <tabbar>
+            <view-selector class="tabbar-item"></view-selector>
+        </tabbar>
+    </div>
+    <div>
+        <week-view ng-if="$ctrl.selectedView === $ctrl.VIEWS.WEEK"></week-view>
+        <month-view ng-if="$ctrl.selectedView === $ctrl.VIEWS.MONTH"></month-view>
+        <year-view ng-if="$ctrl.selectedView === $ctrl.VIEWS.YEAR"></year-view>
+    </div>
+</div>

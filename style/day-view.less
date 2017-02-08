@@ -1,0 +1,42 @@
+@import (reference) "./variables";
+
+day-view {
+  position: relative;
+  display: table;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  background-color: #ffffff;
+  float: left;
+}
+.day-view {
+  width: 100%;
+  position: relative;
+
+  &-title {
+    width: 100%;
+  }
+  &-date {
+    position: absolute;
+    right: 0;
+  }
+
+  .balance {
+    &-item {
+      input {
+        box-sizing: border-box;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid @default-background-color;
+        padding: 3px;
+      }
+
+      input:focus {
+        outline: none;
+      }
+      .underline-bar {
+
+      }
+    }
+  }
+}

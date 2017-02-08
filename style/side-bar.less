@@ -1,0 +1,23 @@
+@import (reference) "./variables";
+
+side-bar {
+  position: relative;
+  display: block;
+  float: left;
+}
+.side-bar {
+  width: 400px;
+  height: 100vh;
+  top: 0;
+  transition: left .5s;
+  background-color: @side-bar-background-color;
+  left: 0;
+
+  &.ng-leave-active {
+    left: -400px;
+  }
+
+  &.ng-enter-active {
+    left: 0;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "balance",
+  "productName": "balance",
+  "version": "1.0.0",
+  "description": "balance",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "watch": "watchify app/app.js -t babelify -o public/js/bundle.js --debug --verbose"
+  },
+  "author": "Vinni",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.6.1",
+    "angular-animate": "1.6.1",
+    "dateformat": "^2.0.0",
+    "electron-prebuilt": "^0.36.0",
+    "electron-reload": "^0.2.0",
+    "jquery": "^2.2.3",
+    "lodash": "^4.17.4",
+    "log4js": "^1.1.0",
+    "nedb": "^1.8.0",
+    "q": "^1.4.1"
+  }
+}

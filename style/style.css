@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Arsenal-Bold";
+  src: url("../fonts/Arsenal-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Arsenal-BoldItalic";
+  src: url("../fonts/Arsenal-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Arsenal-Italic";
+  src: url("../fonts/Arsenal-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Arsenal";
+  src: url("../fonts/Arsenal-Regular.ttf") format("truetype");
+}
+html * {
+  font-size: 1em !important;
+  font-family: Arsenal !important;
+}
+body {
+  background-color: #f1f1f1;
+}
+day-view {
+  position: relative;
+  display: table;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  float: left;
+}
+.day-view {
+  position: relative;
+  width: 100%;
+}
+.day-view-title {
+  width: 100%;
+}
+.day-view-date {
+  position: absolute;
+  right: 0;
+}
+.day-view .balance-item input {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 3px;
+}
+.day-view .balance-item input:focus {
+  outline: none;
+}
+@font-face {
+  font-family: "Arsenal-Bold";
+  src: url("../fonts/Arsenal-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Arsenal-BoldItalic";
+  src: url("../fonts/Arsenal-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Arsenal-Italic";
+  src: url("../fonts/Arsenal-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Arsenal";
+  src: url("../fonts/Arsenal-Regular.ttf") format("truetype");
+}
+input.underline:focus ~ .underline-bar:before,
+input.underline:focus ~ .underline-bar:after {
+  width: 50%;
+}
+.underline-bar {
+  position: relative;
+  display: block;
+  width: 100%;
+  bottom: -2px;
+}
+.underline-bar:before {
+  left: 50%;
+}
+.underline-bar:after {
+  right: 50%;
+}
+.underline-bar:before,
+.underline-bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #445465;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+side-bar {
+  position: relative;
+  display: block;
+  float: left;
+}
+.side-bar {
+  width: 400px;
+  height: 100vh;
+  top: 0;
+  transition: left .5s;
+  background-color: #445465;
+  left: 0;
+}
+.side-bar.ng-leave-active {
+  left: -400px;
+}
+.side-bar.ng-enter-active {
+  left: 0;
+}
+.view-selector-item {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: #ffffff;
+  height: 30px;
+  line-height: 30px;
+}
+.tabbar {
+  background-color: #445465;
+  overflow: hidden;
+}
+.tabbar-item {
+  float: left;
+}
+.menu-btn {
+  border: none;
+  background-color: #445465;
+  outline: none;
+  width: 30px;
+  height: 30px;
+}
